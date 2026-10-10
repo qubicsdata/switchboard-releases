@@ -1,0 +1,21 @@
+{
+  "source": "local-scaffold",
+  "source_repository": null,
+  "source_directory": "extensions/public-repository/accelerator",
+  "commit": "51739e5270c62f646dd6bd1b79181814a6601b62",
+  "accelerator_export_commit": "ee4c03ade3aa55f3d60ea454feb72db3828feeb8",
+  "contract_version": "1.1.0",
+  "license": "Apache-2.0",
+  "files": {
+    "bounded-regex.ts": "b04eafe2d7be1e6dc17aacfa21bc7b3a479a1dddcbb92d1d017470ddbb64b023",
+    "derive.ts": "86c8ff87a7784e340c523f96198cd44a091f7ee50deba7fbb7d5ffb902857e48",
+    "enforcers.ts": "88620bc5e9158fe0b0c6f745b01fc212d6390ce79e9a59994f3ef261a552c01f",
+    "load.ts": "86447482574d37568fe39ef4b4c9e790d1538b73e1eafadbd424d07c589474e9",
+    "parse.ts": "337ce4f930f6516172b52e4aa47c3b2fa52bca716e256a629d3ca6a666b1e652",
+    "probes.ts": "858bbcbbb848517ac3b728379bc256ac2bd3f1c364517d4ad43c93ab676ffa4a",
+    "repo.ts": "7e67ca29587fd5ab391cb0cb98abb93a18055e88d590ce6ab3186cbbcbb1dc38",
+    "schemas.ts": "3bebd93e90156b6684d9d5ab0eed5f88287dcf72e191cf8374a21a09dd24070b",
+    "tiers.ts": "9dafc268894fa107d88198b2e51f053da9ffcee64b82b3c5b976c346bfd4d1e1",
+    "trusted-schemas.ts": "4104bdb85b7ff6bb80892ccd8844ec6e61b94867a3e2177201056e0207672c8e"
+  }
+}
