@@ -1,0 +1,22 @@
+{
+  "source_commit": "33c929b8430ccd918f58daa5f90a6c1042a0bf1e",
+  "source_dirty": false,
+  "version": "2.0.1",
+  "build": "33c929b8430ccd918f58daa5f90a6c1042a0bf1e-a72fffc17dd2ce59",
+  "source_sha256": "a72fffc17dd2ce59792bc0171144f395cc1bd06448e006629274901b707a9cb6",
+  "cli_sha256": "9d418e2e0fd4986a8d446617e202766ce2363319ca64506dde70d0351030b390",
+  "dist_tar_sha256": "a8d755ac84c310f1e7244a0d017d70edaa44bf6e57d48c9faa1ce2854d0e91db",
+  "portable_bundle_build_platform": "darwin-arm64",
+  "node_version": "v24.21.0",
+  "source_date_epoch": 1791676048,
+  "product": "switchboard",
+  "release_repository": "qubicsdata/switchboard-releases",
+  "source_repository": "qubicsdata/switchboard-distribution",
+  "license": "Apache-2.0",
+  "documentation_license": "CC-BY-4.0",
+  "builds": "local only; GitHub Actions disabled",
+  "recipe_sha256": "c03f178ddc3333deb2f5cfff2ed70c97c1e8079fdb22272422f4b177596fc80c",
+  "extension_contract_version": "2.0.0",
+  "channel": "installation packages and documentation; application development source maintained separately",
+  "prior_release": "https://github.com/qubicsdata/switchboard-distribution/releases/tag/v2.0.0"
+}

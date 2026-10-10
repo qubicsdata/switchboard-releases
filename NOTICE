@@ -1,0 +1,30 @@
+Switchboard
+Copyright 2026 QubicsData and the Switchboard contributors
+
+Originally developed by QubicsData (https://qubicsdata.com).
+This attribution identifies the original developer; it adds no license
+restriction or requirement to display credits in a user interface.
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The documentation in docs/ is licensed under the Creative Commons Attribution
+4.0 International License (see docs/LICENSE). Code samples in the
+documentation are additionally available under the Apache License, Version 2.0.
+
+"Switchboard" and the Switchboard logo are trademarks of QubicsData. The
+license does not grant permission to use them; see TRADEMARKS.md.
+
+Switchboard works with agent command-line tools that users install and sign
+in to themselves. Not affiliated with or endorsed by Anthropic, OpenAI, GitHub
+or Google.
+
+This product includes:
+
+  Noto Sans Regular (assets/fonts/NotoSans-Regular.ttf)
+  Copyright 2018 The Noto Project Authors (github.com/googlei18n/noto-fonts)
+  Licensed under the SIL Open Font License, Version 1.1 (assets/fonts/OFL.txt)
+
+  Accelerator workflow contract validators in apps/daemon/src/workflow/validation/
+  are generated from the Accelerator contract export. Copyright 2026 QubicsData.
+  Licensed under the Apache License, Version 2.0. See contract-provenance.json
+  for the exact source and publication status.
