@@ -10,20 +10,18 @@ This public repository provides ready-to-install Switchboard packages for macOS 
 
 The [standalone installation guide](docs/installation.md#standalone-installer) covers public downloads, checksum verification, and installation with the bundled runtime. No GitHub account is required.
 
-### Homebrew for tap collaborators
+### Homebrew
 
-The Homebrew tap remains private. This alternative requires a GitHub account with read access to `qubicsdata/homebrew-tap`:
+The Homebrew tap is public. Install without GitHub credentials:
 
 ```sh
-gh auth login
-gh auth setup-git
 brew tap qubicsdata/tap https://github.com/qubicsdata/homebrew-tap.git
 brew trust qubicsdata/tap
 brew install qubicsdata/tap/switchboard
 switchboard ui
 ```
 
-`brew trust` is available in Homebrew 7; earlier versions may not need this step. The tap's download strategy can use your existing GitHub CLI sign-in or `HOMEBREW_GITHUB_API_TOKEN`. Credentials stay out of repository URLs and formula files. Read access to the application development repository is not required for installation.
+`brew trust` is available in Homebrew 7; earlier versions may not need this step. Public downloads use Homebrew’s standard HTTPS downloader with pinned SHA-256 hashes. Read access to the application development repository is not required for installation.
 
 If an older installation appears first on PATH, use `$(brew --prefix)/bin/switchboard ui` to open the Homebrew version. Installation does not launch services or move existing workspaces.
 

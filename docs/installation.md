@@ -1,6 +1,6 @@
 # Install Switchboard
 
-Switchboard 2.0.1 is distributed through this **public** [GitHub repository](https://github.com/qubicsdata/switchboard-releases). The [Homebrew tap](https://github.com/qubicsdata/homebrew-tap) and application development repository remain private. The application is licensed under Apache-2.0. Packages are built locally. This release does not use GitHub Actions, native Apple installers, notarization or the separate signed-updater trust-key route.
+Switchboard 2.0.1 is distributed through this **public** [GitHub repository](https://github.com/qubicsdata/switchboard-releases). The [Homebrew tap](https://github.com/qubicsdata/homebrew-tap) is public; the application development repository remains private. The application is licensed under Apache-2.0. Packages are built locally. This release does not use GitHub Actions, native Apple installers, notarization or the separate signed-updater trust-key route.
 
 
 The release repository provides installers, checksums, notices and acceptance evidence. Installing does not require access to the separate private source repository or a source checkout. Use the standalone installer below, or Homebrew if a bottle supports your platform.
@@ -30,13 +30,11 @@ The bootstrap uses the archive's bundled runtime; Node and a compiler are unnece
 
 The formula selects the matching verified Homebrew bottle and installs its pinned Node 24.21.0 runtime. Bottles preserve the accepted runtime bytes and use SHA-256 verification. The tested macOS bottle tags are `arm64_golden_gate` and `golden_gate` (macOS 27); Linux uses `arm64_linux` and `x86_64_linux`. On other macOS versions, use the matching standalone archive; the bottle formula refuses source fallback that could alter the runtime. A separate Node installation is unnecessary. Windows and musl Linux are not supported.
 
-## Authenticate and install
+## Install with Homebrew
 
-For Homebrew, your GitHub account needs read access to the private tap. The release assets are public. Sign in with GitHub CLI and configure its Git credential helper so Homebrew can clone the private tap:
+The tap and release assets are public. No GitHub account or token is required:
 
 ```sh
-gh auth login --hostname github.com
-gh auth setup-git
 brew tap qubicsdata/tap https://github.com/qubicsdata/homebrew-tap
 brew install qubicsdata/tap/switchboard
 switchboard --version
@@ -44,7 +42,7 @@ switchboard --version
 
 Homebrew 7 may request `brew trust qubicsdata/tap` before installation.
 
-Homebrew uses its standard GitHub credentials for release metadata and asset requests: `HOMEBREW_GITHUB_API_TOKEN`, then GitHub CLI login, then a supported Keychain credential. An explicit token is optional after `gh auth login`. The token authenticates GitHub API requests for release assets; it is not embedded in download URLs, the formula or installed files. A fine-grained token needs **Contents: read** on the release repository (and the tap when used for Git authentication); a classic token needs private-repository access. Git authentication for the tap and API authentication for assets are separate.
+Homebrew downloads public assets over HTTPS and verifies the pinned SHA-256 before pouring the bottle. Current formulas do not use the historical private download strategy.
 
 First-run setup is explicit:
 
@@ -78,7 +76,7 @@ Use one supervisor for a home. If an existing checkout or transactional installa
 
 Developers with separate source access can see [building from source](https://github.com/qubicsdata/switchboard-distribution/blob/main/docs/building.md). Standalone and Homebrew launchers must remain separate.
 
-The optional [Folio planning client](https://github.com/qubicsdata/folio-releases) provides public standalone downloads and installs independently with `brew install qubicsdata/tap/folio-workspace` for private-tap collaborators. Neither product writes directly into the other's databases.
+The optional [Folio planning client](https://github.com/qubicsdata/folio-releases) provides public standalone downloads and installs independently with `brew install qubicsdata/tap/folio-workspace` through the public tap. Neither product writes directly into the other's databases.
 
 ## Upgrade and recover
 
