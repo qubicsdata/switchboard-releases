@@ -8,7 +8,7 @@ This repository is public. Private reports are visible to the repository's secur
 
 ## Scope and support
 
-Official Switchboard packages, installers, and bundled first-party components are in scope. The latest patch release receives security fixes; install updates from this repository's Releases page or the QubicsData Homebrew tap if you have access. Third-party agents, tools, and extensions have their own maintainers and permissions.
+Official Switchboard packages, installers, and bundled first-party components are in scope. The latest patch release receives security fixes; install updates from this repository's Releases page or the QubicsData public Homebrew tap. Third-party agents, tools, and extensions have their own maintainers and permissions.
 
 Switchboard runs with the operating-system user's privileges. Use separate operating-system accounts or isolated environments for mutually untrusted users, agents, and projects. Application permissions do not sandbox arbitrary native programs with the same account's filesystem access. Keep local application ports on loopback; do not expose them through a reverse proxy, public tunnel, or port forwarding.
 

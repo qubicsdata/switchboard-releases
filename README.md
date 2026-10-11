@@ -27,7 +27,7 @@ If an older installation appears first on PATH, use `$(brew --prefix)/bin/switch
 
 ## Packages
 
-The [v2.0.1 release](https://github.com/qubicsdata/switchboard-releases/releases/tag/v2.0.1) contains standalone archives and Homebrew bottles for macOS and glibc Linux, on ARM64 and x64. Runtimes are bundled. SHA-256 checksums, license notices, source/build provenance and validation evidence accompany the packages.
+The [v2.0.2 release](https://github.com/qubicsdata/switchboard-releases/releases/tag/v2.0.2) contains standalone archives and Homebrew bottles for macOS and glibc Linux, on ARM64 and x64. Runtimes are bundled. SHA-256 checksums, license notices, source/build provenance and validation evidence accompany the packages.
 
 The Homebrew macOS bottles target macOS 27. Other supported macOS versions can use the matching standalone archive, subject to its runtime requirements. macOS ARM64 and Linux ARM64 checks run natively; x64 checks use Rosetta and full-system QEMU TCG. Exact platform and test scopes are recorded in each release's evidence.
 

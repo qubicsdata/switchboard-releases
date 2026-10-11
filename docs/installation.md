@@ -1,20 +1,20 @@
 # Install Switchboard
 
-Switchboard 2.0.1 is distributed through this **public** [GitHub repository](https://github.com/qubicsdata/switchboard-releases). The [Homebrew tap](https://github.com/qubicsdata/homebrew-tap) is public; the application development repository remains private. The application is licensed under Apache-2.0. Packages are built locally. This release does not use GitHub Actions, native Apple installers, notarization or the separate signed-updater trust-key route.
+Switchboard 2.0.2 is distributed through this **public** [GitHub repository](https://github.com/qubicsdata/switchboard-releases). The [Homebrew tap](https://github.com/qubicsdata/homebrew-tap) is public; the application development repository remains private. The application is licensed under Apache-2.0. Packages are built locally. This release does not use GitHub Actions, native Apple installers, notarization or the separate signed-updater trust-key route.
 
 
 The release repository provides installers, checksums, notices and acceptance evidence. Installing does not require access to the separate private source repository or a source checkout. Use the standalone installer below, or Homebrew if a bottle supports your platform.
 
 ## Standalone installer
 
-Download `install-switchboard.sh`, `SHA256SUMS` and the matching `switchboard-2.0.1-…-TARGET-node.tar.gz` asset from the [2.0.1 release](https://github.com/qubicsdata/switchboard-releases/releases/tag/v2.0.1). No GitHub account is required for browser downloads. `TARGET` is `darwin-arm64`, `darwin-x64`, `linux-arm64` or `linux-x64`. Compute the bootstrap and archive hashes with `shasum -a 256 FILE` on macOS or `sha256sum FILE` on Linux, and compare both against `SHA256SUMS` before running them. Stop if either differs. Checksums detect altered bytes relative to the published manifest; they are not an independent publisher signature.
+Download `install-switchboard.sh`, `SHA256SUMS` and the matching `switchboard-2.0.2-…-TARGET-node.tar.gz` asset from the [2.0.2 release](https://github.com/qubicsdata/switchboard-releases/releases/tag/v2.0.2). No GitHub account is required for browser downloads. `TARGET` is `darwin-arm64`, `darwin-x64`, `linux-arm64` or `linux-x64`. Compute the bootstrap and archive hashes with `shasum -a 256 FILE` on macOS or `sha256sum FILE` on Linux, and compare both against `SHA256SUMS` before running them. Stop if either differs. Checksums detect altered bytes relative to the published manifest; they are not an independent publisher signature.
 
 If you already use GitHub CLI, you can also download the files with:
 
 ```sh
-gh release download v2.0.1 --repo qubicsdata/switchboard-releases \
+gh release download v2.0.2 --repo qubicsdata/switchboard-releases \
   --pattern 'install-switchboard.sh' --pattern 'SHA256SUMS' \
-  --pattern 'switchboard-2.0.1-*-darwin-arm64-node.tar.gz'
+  --pattern 'switchboard-2.0.2-*-darwin-arm64-node.tar.gz'
 ```
 
 Choose the target matching your machine. Supply the archive's exact SHA-256 from `SHA256SUMS` and a private installation prefix:
