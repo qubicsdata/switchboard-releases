@@ -1,16 +1,17 @@
 # Install Switchboard
 
-Switchboard 2.0.1 is distributed through the **private** [GitHub repository](https://github.com/qubicsdata/switchboard-releases) and [Homebrew tap](https://github.com/qubicsdata/homebrew-tap). The source is licensed under Apache-2.0; repository visibility is private for now. Packages are built locally. This release does not use GitHub Actions, native Apple installers, notarization or the separate signed-updater trust-key route.
+Switchboard 2.0.1 is distributed through this **public** [GitHub repository](https://github.com/qubicsdata/switchboard-releases). The [Homebrew tap](https://github.com/qubicsdata/homebrew-tap) and application development repository remain private. The application is licensed under Apache-2.0. Packages are built locally. This release does not use GitHub Actions, native Apple installers, notarization or the separate signed-updater trust-key route.
 
 
 The release repository provides installers, checksums, notices and acceptance evidence. Installing does not require access to the separate private source repository or a source checkout. Use the standalone installer below, or Homebrew if a bottle supports your platform.
 
 ## Standalone installer
 
-Authenticate to GitHub, then download `install-switchboard.sh`, `SHA256SUMS` and the matching `switchboard-2.0.1-…-TARGET-node.tar.gz` asset from the [2.0.1 release](https://github.com/qubicsdata/switchboard-releases/releases/tag/v2.0.1). `TARGET` is `darwin-arm64`, `darwin-x64`, `linux-arm64` or `linux-x64`. Check the bootstrap and archive against the authenticated release checksums before running them.
+Download `install-switchboard.sh`, `SHA256SUMS` and the matching `switchboard-2.0.1-…-TARGET-node.tar.gz` asset from the [2.0.1 release](https://github.com/qubicsdata/switchboard-releases/releases/tag/v2.0.1). No GitHub account is required for browser downloads. `TARGET` is `darwin-arm64`, `darwin-x64`, `linux-arm64` or `linux-x64`. Compute the bootstrap and archive hashes with `shasum -a 256 FILE` on macOS or `sha256sum FILE` on Linux, and compare both against `SHA256SUMS` before running them. Stop if either differs. Checksums detect altered bytes relative to the published manifest; they are not an independent publisher signature.
+
+If you already use GitHub CLI, you can also download the files with:
 
 ```sh
-gh auth login --hostname github.com
 gh release download v2.0.1 --repo qubicsdata/switchboard-releases \
   --pattern 'install-switchboard.sh' --pattern 'SHA256SUMS' \
   --pattern 'switchboard-2.0.1-*-darwin-arm64-node.tar.gz'
@@ -31,7 +32,7 @@ The formula selects the matching verified Homebrew bottle and installs its pinne
 
 ## Authenticate and install
 
-For Homebrew, your GitHub account needs read access to the release repository and private tap. Sign in with GitHub CLI and configure its Git credential helper so Homebrew can clone the private tap:
+For Homebrew, your GitHub account needs read access to the private tap. The release assets are public. Sign in with GitHub CLI and configure its Git credential helper so Homebrew can clone the private tap:
 
 ```sh
 gh auth login --hostname github.com
@@ -77,7 +78,7 @@ Use one supervisor for a home. If an existing checkout or transactional installa
 
 Developers with separate source access can see [building from source](https://github.com/qubicsdata/switchboard-distribution/blob/main/docs/building.md). Standalone and Homebrew launchers must remain separate.
 
-The optional [Folio planning client](https://github.com/qubicsdata/folio-releases) installs independently with `brew install qubicsdata/tap/folio-workspace` using the same private-release authentication. Neither product writes directly into the other's databases.
+The optional [Folio planning client](https://github.com/qubicsdata/folio-releases) provides public standalone downloads and installs independently with `brew install qubicsdata/tap/folio-workspace` for private-tap collaborators. Neither product writes directly into the other's databases.
 
 ## Upgrade and recover
 

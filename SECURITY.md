@@ -1,48 +1,27 @@
 # Security policy
 
-## Reporting a vulnerability
+## Report a vulnerability privately
 
-This repository is private. Report security problems to the QubicsData repository administrators through the existing private collaboration channel. A repository issue is visible to everyone with repository access, so share a minimal description there only when that audience is appropriate; send sensitive details directly to an administrator. Do not include credentials or private project data. Public vulnerability reporting will be configured before public access is enabled.
+Use [GitHub private vulnerability reporting](https://github.com/qubicsdata/switchboard-releases/security/advisories/new). Do not post security details, credentials, or private project data in public issues. Include the application version, operating system and architecture, the affected feature, expected and observed behavior, and a minimal example using synthetic data.
 
-Include what you found, the Switchboard version (`switchboard --version`), your operating system, and the steps to reproduce. Do not include real credentials or other people's data.
+This repository is public. Private reports are visible to the repository's security maintainers and invited collaborators, not ordinary repository visitors. Test only installations and accounts you control.
 
-## What to expect
+## Scope and support
 
-- We acknowledge your report within **5 business days**.
-- For critical issues we ship a fix or a mitigation within **30 days** of acknowledgement. Other issues are scheduled by severity.
-- We publish a GitHub security advisory together with the fix, and credit you unless you ask us not to.
-- We keep you informed while we work on it, and may ask you to check the fix.
+Official Switchboard packages, installers, and bundled first-party components are in scope. The latest patch release receives security fixes; install updates from this repository's Releases page or the QubicsData Homebrew tap if you have access. Third-party agents, tools, and extensions have their own maintainers and permissions.
 
-## Supported versions
+Switchboard runs with the operating-system user's privileges. Use separate operating-system accounts or isolated environments for mutually untrusted users, agents, and projects. Application permissions do not sandbox arbitrary native programs with the same account's filesystem access. Keep local application ports on loopback; do not expose them through a reverse proxy, public tunnel, or port forwarding.
 
-Only the latest minor release receives security fixes. Homebrew installations update with `brew update` and `brew upgrade switchboard`.
+## Release integrity
 
-## Scope
+Download assets over HTTPS from this repository. Verify the selected archive and any separately downloaded bootstrap against its published SHA-256 checksum before extracting or running it. A checksum confirms correspondence with the manifest; it is not an independent publisher signature. These packages are not Apple-notarized and do not claim the separate signed-updater distribution route.
 
-In scope are official Switchboard binaries and installers, bundled first-party extension packages, and the source/build tools from which they are produced. Packages are built locally; GitHub Actions is disabled for this distribution.
+GitHub secret scanning and push protection are enabled. The default branch is protected against force pushes and deletion, and version tags against modification and deletion. GitHub Actions is disabled; packages are built and tested locally. Private vulnerability reporting is enabled.
 
-Out of scope are user-installed agent CLIs and third-party packages (report to their authors), and attacks requiring control of the operating-system user account. Switchboard permissions do not replace operating-system account isolation; see the [privacy notice](PRIVACY.md).
+Release immutability was enabled after Folio 1.1.1 and Switchboard 2.0.1 were published. It applies to future releases, not those existing releases. Maintainers must assemble and verify all assets in a draft before publishing a new immutable release. Correct a released package with a new version; preserve old version identities.
 
-## How fixes are made
+## Handling reports and compromised releases
 
-Maintainers develop fixes in a private security advisory and temporary private fork, release the fix, then publish an advisory. Security-sensitive changes require maintainer review. There is no bug bounty.
+Maintainers investigate in the private application development repositories. Keep patches and sensitive discussion private until a corrected package or mitigation is available. Coordinate public disclosure with the reporter and credit them according to their preference. This project does not offer a bug bounty.
 
-## Safe harbour
-
-We will not pursue legal action for research that follows this policy:
-
-- you act in good faith;
-- you avoid privacy violations and data destruction;
-- you test only against your own installations and accounts;
-- you give us reasonable time to fix the issue before disclosure.
-
-## Appendix: key compromise runbook
-
-If a Switchboard signing key may be compromised:
-
-1. Report it as above, marked **critical**.
-2. The maintainers revoke the key: release keys through a statement signed by the offline root key (PR-D18), and catalog keys through the revocation list.
-3. A new release ships with the replacement key and a security notice.
-4. Users see the security notice on their next update check.
-
-The extensions repository's catalog runbook covers catalog keys in detail.
+If a release or publishing credential may be compromised, report it through the private channel above. Maintainers should revoke the affected credential, review account access and release/download history, publish a security advisory with affected versions and verified replacement hashes, and ship a new corrected version. Do not silently replace previously published assets. Restore trust through a verified maintainer account and the published advisory, not through a checksum uploaded by a suspected compromised account.
