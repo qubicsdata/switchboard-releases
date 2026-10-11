@@ -1,0 +1,315 @@
+{
+  "ok": true,
+  "verified_at": "2026-10-11T01:12:20Z",
+  "scope": "Postpublication verification; immutable release assets and version tag are unchanged.",
+  "release": {
+    "repository": "qubicsdata/switchboard-releases",
+    "visibility": "public",
+    "immutable": true,
+    "release": "https://github.com/qubicsdata/switchboard-releases/releases/tag/v2.0.2",
+    "tag": "v2.0.2",
+    "target_commit": "5bd5662cee6193a48e7f4e7a5f6e9a1a4b71f8ff",
+    "published_at": "2026-10-11T01:10:40Z",
+    "stable": true,
+    "assets_verified": 41,
+    "sha256sums_sha256": "75b9b5e54b2492018372b374fcddeb4f4b03d159576ba033f285cd61a5641020",
+    "github_actions_enabled": false,
+    "assets": [
+      {
+        "name": "DOCUMENTATION-LICENSE.txt",
+        "sha256": "79988ec04ffdebabf7a1c20370103aa3023f0ab5acb6ad1bb347a38e2c66d957",
+        "bytes": 19012
+      },
+      {
+        "name": "LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      },
+      {
+        "name": "NOTICE",
+        "sha256": "549daf75e9e3dd6d45d4425b20c73686f95586b918be1d1d808c1a6046a0056c",
+        "bytes": 1410
+      },
+      {
+        "name": "PRIVACY.md",
+        "sha256": "65bb1e086558df4499606c767f9ef2fd236956567f35b83b3f35660d6e5be0b3",
+        "bytes": 3273
+      },
+      {
+        "name": "SHA256SUMS",
+        "sha256": "75b9b5e54b2492018372b374fcddeb4f4b03d159576ba033f285cd61a5641020",
+        "bytes": 4485
+      },
+      {
+        "name": "SOURCE_PROVENANCE.json",
+        "sha256": "7e24ffccb1a23ee6d12874f8b2429a75f1061614f334dc3009843a5d6fb3169e",
+        "bytes": 1337
+      },
+      {
+        "name": "THIRD_PARTY_NOTICES-2.0.2-6bf8246e4ac4-darwin-arm64-node.txt",
+        "sha256": "cd67056076efaa738b88a7ceb9bdec4282cd08ceb080e5ac106b061423256a42",
+        "bytes": 214387
+      },
+      {
+        "name": "THIRD_PARTY_NOTICES-2.0.2-6bf8246e4ac4-darwin-x64-node.txt",
+        "sha256": "74591ce73fff18e4b18128fc8be7a351e5d9e2e2a5652fd65245aa04ad854bee",
+        "bytes": 214381
+      },
+      {
+        "name": "THIRD_PARTY_NOTICES-2.0.2-6bf8246e4ac4-linux-arm64-node.txt",
+        "sha256": "69bc8ea377b308b6c55869ce521224967d5996ed151ce33397888ec4b4e8cd24",
+        "bytes": 214388
+      },
+      {
+        "name": "THIRD_PARTY_NOTICES-2.0.2-6bf8246e4ac4-linux-x64-node.txt",
+        "sha256": "a3d150bea2e64dad012100cec6e70eee3dca4a9930c32311d27a22594cee3076",
+        "bytes": 214382
+      },
+      {
+        "name": "TRADEMARKS.md",
+        "sha256": "bca5585f7de8fcf1c31522cb6b9e1d78fb3b5f8d4f1b2d23f54d570b895bb597",
+        "bytes": 2162
+      },
+      {
+        "name": "contract-provenance.json",
+        "sha256": "1b3183e205a962071f68d720939e4e90d849b187d1c1b0b53dbe8c1562b77a75",
+        "bytes": 1198
+      },
+      {
+        "name": "install-switchboard.sh",
+        "sha256": "8b77626721c98f2e62bd3f7fc9fd0832aabfdfeacab3350cd08db7975dc6ef44",
+        "bytes": 1649
+      },
+      {
+        "name": "release-evidence.json",
+        "sha256": "0d5387a711b3daa6f08f5dfbe371d433f9b1ffdfdc4c2e4c24bda789c60ebb05",
+        "bytes": 9716
+      },
+      {
+        "name": "switchboard-2.0.2-6bf8246e4ac4-darwin-arm64-node.cdx.json",
+        "sha256": "ef2642aa66a78691a41bf7b037e25e68a817c13c9155307efcd86aa5b78bd80a",
+        "bytes": 9330
+      },
+      {
+        "name": "switchboard-2.0.2-6bf8246e4ac4-darwin-arm64-node.tar.gz",
+        "sha256": "3637e28d40b503b0a4065c972817bc790631af5ad6db620e4577a363a20dbf11",
+        "bytes": 72439316
+      },
+      {
+        "name": "switchboard-2.0.2-6bf8246e4ac4-darwin-arm64-node.tar.gz.sha256",
+        "sha256": "a8071a2b9435646cc4177b541752d4a2a879e0122134b77b071a38419c19c0b0",
+        "bytes": 122
+      },
+      {
+        "name": "switchboard-2.0.2-6bf8246e4ac4-darwin-x64-node.cdx.json",
+        "sha256": "93237c9fcd33db7fa38adaeca459ee2552637004242e10acc96764b4012ca332",
+        "bytes": 9304
+      },
+      {
+        "name": "switchboard-2.0.2-6bf8246e4ac4-darwin-x64-node.tar.gz",
+        "sha256": "696eba08d1454ef8bbc7b0ac5d90541d14c5231fd0e72098d48af99e1dc52f0c",
+        "bytes": 74872566
+      },
+      {
+        "name": "switchboard-2.0.2-6bf8246e4ac4-darwin-x64-node.tar.gz.sha256",
+        "sha256": "c1764c6012d92994170dabbda67fc49de7d1efb2dd8a97e9be954ff68134b275",
+        "bytes": 120
+      },
+      {
+        "name": "switchboard-2.0.2-6bf8246e4ac4-linux-arm64-node.cdx.json",
+        "sha256": "64e40c1a513dbf324163d24513fabdcc45e5ebefbf8ab14f01ad02a6a8f7a4d1",
+        "bytes": 9423
+      },
+      {
+        "name": "switchboard-2.0.2-6bf8246e4ac4-linux-arm64-node.tar.gz",
+        "sha256": "8cf4ed7a746de36082aa155c547643c013024c4666dfe75a7aeb869d7d832b6d",
+        "bytes": 77913036
+      },
+      {
+        "name": "switchboard-2.0.2-6bf8246e4ac4-linux-arm64-node.tar.gz.sha256",
+        "sha256": "ae31ba59dde5bca8e3a4823e07227a0deb31ce327b50531cd31af84d5376f038",
+        "bytes": 121
+      },
+      {
+        "name": "switchboard-2.0.2-6bf8246e4ac4-linux-x64-node.cdx.json",
+        "sha256": "f524ba3de2d8e90d7e1411c6da7d19b2047f1b4933c298ec99c06c39b387eeee",
+        "bytes": 9393
+      },
+      {
+        "name": "switchboard-2.0.2-6bf8246e4ac4-linux-x64-node.tar.gz",
+        "sha256": "70c75f13c610cfd16d84c2b0ff7bf77298ce71b370829f3d8d9cbf1f54452a1f",
+        "bytes": 79553694
+      },
+      {
+        "name": "switchboard-2.0.2-6bf8246e4ac4-linux-x64-node.tar.gz.sha256",
+        "sha256": "8242bcd96f301273c51948628309a74b38c13f74ec8d8960c363bed94b5102a4",
+        "bytes": 119
+      },
+      {
+        "name": "switchboard-2.0.2-acceptance-evidence.tar.gz",
+        "sha256": "bb775da20358bff80b65c200f6a956403f705d77f72bb44892efa0c6d0e9f50a",
+        "bytes": 17432
+      },
+      {
+        "name": "switchboard-2.0.2-acceptance-evidence.tar.gz.sha256",
+        "sha256": "b83bee7f18bef9cfbc02a6af7fa995ede9e2f5292860134c18ce70aba62a83e2",
+        "bytes": 111
+      },
+      {
+        "name": "switchboard-2.0.2-archives.json",
+        "sha256": "cc9100ada6437ae2f72104d7988cb0ea8ca692d724c6bdf4f4577d53e0ae1416",
+        "bytes": 1157
+      },
+      {
+        "name": "switchboard-2.0.2.arm64_golden_gate.bottle.tar.gz",
+        "sha256": "d9b05f3d1d5b9196367821a020256db1695cd9159eabe008e098d695e753c5e1",
+        "bytes": 72027410
+      },
+      {
+        "name": "switchboard-2.0.2.arm64_golden_gate.bottle.tar.gz.payload.json",
+        "sha256": "8f3ea3781f1240ad431afaf2d4d44eb466435313f1c9c596779822c970c116d4",
+        "bytes": 1068264
+      },
+      {
+        "name": "switchboard-2.0.2.arm64_golden_gate.bottle.tar.gz.sha256",
+        "sha256": "e3e6ca36d23ad0b392eae0f0c160336fc34c6b1134524221b2fc5d86d79bc249",
+        "bytes": 116
+      },
+      {
+        "name": "switchboard-2.0.2.arm64_linux.bottle.tar.gz",
+        "sha256": "b7b68a47208e78952eda881b147dcde1ee9226f795f84664aca8933e67da51f1",
+        "bytes": 77292086
+      },
+      {
+        "name": "switchboard-2.0.2.arm64_linux.bottle.tar.gz.payload.json",
+        "sha256": "85da660259cac56ccbf22ffd6024677c26e5690ae96012e57733eedbfe0e89b2",
+        "bytes": 1068670
+      },
+      {
+        "name": "switchboard-2.0.2.arm64_linux.bottle.tar.gz.sha256",
+        "sha256": "5ded780a6d3fd521eb67a950417af122e74e5ef136d28017a75c361827911831",
+        "bytes": 110
+      },
+      {
+        "name": "switchboard-2.0.2.golden_gate.bottle.tar.gz",
+        "sha256": "16db8e832cfdcd43e718286679c4af7bf7f0088455faa4b8b99173b79a1e8890",
+        "bytes": 74417556
+      },
+      {
+        "name": "switchboard-2.0.2.golden_gate.bottle.tar.gz.payload.json",
+        "sha256": "b82160dd3294e4381d13475873ecfb1ef6e20f5a713010adb2d6905a3ec1ba58",
+        "bytes": 1068225
+      },
+      {
+        "name": "switchboard-2.0.2.golden_gate.bottle.tar.gz.sha256",
+        "sha256": "a47efb0fface81953f10205e751f256735667458d73b0ac309a7635396a89304",
+        "bytes": 110
+      },
+      {
+        "name": "switchboard-2.0.2.x86_64_linux.bottle.tar.gz",
+        "sha256": "50a3131af1733bfd1d5b4502e0c054cdc7124567d4cfd474c006c32ddb3acc28",
+        "bytes": 78863810
+      },
+      {
+        "name": "switchboard-2.0.2.x86_64_linux.bottle.tar.gz.payload.json",
+        "sha256": "0145d036741c859feaec7dd9ea50ccffbc45f99202ee9d374e609a01e43eb1da",
+        "bytes": 1068624
+      },
+      {
+        "name": "switchboard-2.0.2.x86_64_linux.bottle.tar.gz.sha256",
+        "sha256": "c56004c7574dd8ece1bf49d95fa6f59fc2fec1175ba469581ec1763548422020",
+        "bytes": 111
+      }
+    ]
+  },
+  "release_attestation": {
+    "repository": "qubicsdata/switchboard-releases",
+    "tag": "v2.0.2",
+    "verified_by": "gh release verify; successful cryptographic verification against GitHub release identity",
+    "subject_alternative_name": "https://dotcom.releases.github.com",
+    "attested_tag_commit": "5bd5662cee6193a48e7f4e7a5f6e9a1a4b71f8ff",
+    "assets_bound_to_exact_sha256": 41,
+    "verified_timestamps": [
+      {
+        "type": "TimestampAuthority",
+        "uri": "timestamp.githubapp.com",
+        "timestamp": "2026-10-11T01:10:40Z"
+      }
+    ],
+    "verification_receipt_sha256": "799db2d7bf48415958c872c465de5be239f44e14a8ce1acb1691abfc53fd6f1f",
+    "scope": "GitHub release attestation; not an independent publisher or Apple code-signing identity"
+  },
+  "anonymous_homebrew_acceptance": {
+    "ok": true,
+    "tested_at": "2026-10-11T01:11:44Z",
+    "platform": "darwin-arm64",
+    "execution": "native macOS 27",
+    "homebrew_version": "Homebrew 7.0.6\nHomebrew/homebrew-core N/A",
+    "tap_repository": "qubicsdata/homebrew-tap",
+    "tap_commit": "d2c1bd3e6107f0d4ad7310e1146f69241c7b0537",
+    "tap_formula_sha256": "5b0063439d21d4649e07f4dc1d537e9b7ddc6b8b82771ce297f3813fa3d714fc",
+    "folio_tap_formula_sha256": "59d0680d31bee09ef5fda5f7b14a46e4a42ed301e41246e97d2c3505ced95ee9",
+    "strategy_sha256": "e455e992349b182e59ebf7fcce934aca60ad0cb4f0ffae5b98d1ea6d9152fc28",
+    "tap_clone": "Anonymous HTTPS clone with credential helpers and inherited Git config disabled",
+    "downloads": "Actual anonymous public HTTPS release asset fetch from empty task bottle cache; no GitHub token; normal Homebrew SHA-256 enforcement",
+    "products": [
+      {
+        "product": "switchboard",
+        "version": "2.0.2",
+        "normal_brew_install": true,
+        "poured_from_bottle": true,
+        "unmodified_formula_test_block": true,
+        "post_pour_payload_integrity": true,
+        "embedded_formula_loader": true,
+        "downloaded_bottle_sha256": "d9b05f3d1d5b9196367821a020256db1695cd9159eabe008e098d695e753c5e1"
+      },
+      {
+        "product": "folio-workspace",
+        "version": "1.1.2",
+        "normal_brew_install": true,
+        "poured_from_bottle": true,
+        "unmodified_formula_test_block": true,
+        "post_pour_payload_integrity": true,
+        "embedded_formula_loader": true,
+        "downloaded_bottle_sha256": "76bbca090b036428584b83e61d9d07532a1d2ab20b4215f4ac258a92f3361177"
+      }
+    ],
+    "same_prefix_coinstall": true,
+    "service_path_metadata": true,
+    "shared_helper_link_absent": true,
+    "live_apps_or_homes_modified": false,
+    "services_started": false,
+    "assurance_limit": "Native Mac ARM anonymous public remote fetch/pour; other target normal cached pours documented separately. Stock macOS brew test compiler setup unavailable with host CLT14.3; unchanged formula test blocks executed via Formula#run_test."
+  },
+  "anonymous_release_downloads": {
+    "all_products_assets": 66,
+    "all_products_bytes": 842726661,
+    "all_exact_sha256_matches": true
+  },
+  "security_review": {
+    "final_package_archives_scanned": 18,
+    "file_occurrences_scanned": 55530,
+    "unique_contents_scanned": 7252,
+    "recognized_credentials_or_private_keys_found": false,
+    "credential_url_pattern_matches": "Three unchanged upstream examples/test fixtures, reviewed; no real credentials.",
+    "personal_home_or_new_pattern_matches_found": false,
+    "scan_limit": "Pattern scanning and targeted regression validation are not a guarantee that software has no vulnerabilities."
+  },
+  "distribution": {
+    "public_release_repositories": true,
+    "public_homebrew_tap": true,
+    "development_repositories_private": true,
+    "github_actions_enabled": false,
+    "builds": "local only",
+    "apple_signing_or_notarization": false
+  },
+  "installed_acceptance_scope": {
+    "macos_arm64": "native macOS27",
+    "linux_arm64": "native Linux ARM64 in local Lima",
+    "macos_x64": "Rosetta on ARM64 host",
+    "linux_x64": "full-system QEMU TCG on ARM64 host",
+    "macos_formula_tests": "Unmodified Formula#run_test blocks; stock brew test compiler precheck unavailable with host CLT14.3.",
+    "live_provider_accounts_tested": false,
+    "live_apps_or_workspaces_modified": false
+  }
+}
